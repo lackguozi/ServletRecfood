@@ -1,0 +1,117 @@
+<!--
+body {
+    font: 12px/1.6 "Hiragino Sans GB",STHeiti,"微软雅黑","Microsoft YaHei",Helvetica,Arial,serif;
+}
+body,  div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html,  img, input, label, li, ol, p, pre, select, span,  ul {
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+
+.w{
+    background-color: #fff;
+    padding: 10px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clear{
+    zoom: 1;
+}
+.mo {
+    font-size: 20px;
+    color: #ff6767;
+    line-height: 20px;
+    padding: 20px 0 20px 25px;
+    background: rgb(255, 255, 255) url("mo.png") no-repeat scroll left center;
+}
+.mo * {
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+.category_sub {
+    margin: 0 0 30px 0;
+    width: 100%;
+    overflow: hidden;
+    background: #f8f8f8;
+    position: relative;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+.category_sub h3 {
+    float: left;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 186px;
+    color: #666;
+}
+.category_sub ul {
+    width: 804px;
+    float: right;
+    background: #fff;
+    margin-bottom: -1px;
+    overflow: hidden;
+}
+ol, ul {
+    list-style: none;
+
+}
+.category_sub li {
+    float: left;
+    position: relative;
+
+}
+.category_sub a {
+    float: left;
+    height: 70px;
+    line-height: 64px;
+    width: 133px;
+    border-left: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#reload { /* 按钮美化 */
+    width: 270px; /* 宽度 */
+    height: 40px; /* 高度 */
+    border-width: 0px; /* 边框宽度 */
+    border-radius: 3px; /* 边框半径 */
+    background: #1E90FF; /* 背景颜色 */
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: Microsoft YaHei; /* 设置字体 */
+    color: white; /* 字体颜色 */
+    font-size: 17px; /* 字体大小 */
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#reload:hover { /* 鼠标移入按钮范围时改变颜色 */
+    background: #5599FF;
+}
+a:hover{
+    background: #f8f8f8;
+
+}
+
+-->

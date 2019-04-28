@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" >
+    <title>寻找一个好的机会</title>
+    <link rel="stylesheet" href="./js/style.css">
+    <script type="text/javascript">
+        var xmlhttp;
+        function loadCheck(){
+          var uname=document.getElementById('uid').value;
+          var pword=document.getElementById('pwd').value;
+          var pword1=document.getElementById('pwd1').value;
+          if(pword!=pword1){alert("两次输入密码不一致");return;}
+          if(uname.length==0||pword.length==0){alert("账号或密码为空");return;}
+          if (window.XMLHttpRequest) {xmlhttp=new XMLHttpRequest();}
+          else{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+          xmlhttp.onreadystatechange=getResult;
+          xmlhttp.open("POST","reg.action",true);
+          xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+          xmlhttp.send("id="+uname+"&pwd="+pword);
+        }
+        function getResult(){
+          if (xmlhttp.readyState==4) {
+            if(xmlhttp.status==200){
+              var rec=xmlhttp.responseText;
+              if(rec=="1"){
+                
+                window.location.href="index.jsp"
+      
+              }
+              else {
+                alert("用户名已存在，请换一个");
+              }
+      
+            }
+            else{
+              alert("创建失败，请稍后再试");
+            }
+          }
+        }
+</script>
+</head>
+<body>
+    <!--背景-->
+
+<!--荧光点点-->
+
+<!--登录注册表-->
+<div class="wel" id="from">
+    <div class="box-2 le-2">
+        <form>
+            <div class="flrg-1">
+                <h3>注册</h3>
+                <div class="a">
+                    <input type="text" class="in-1" id="uid" placeholder="您的账号">
+                </div>
+                <div class="a">
+                    <input type="password" id="pwd" class="in-1" placeholder="输入密码">
+                </div>
+                <div class="a">
+                    <input type="password" id="pwd1"class="in-1" placeholder="再次确认密码">
+                </div>
+                
+                <div class="a">
+                    <input type="email" class="in-1" placeholder="输入邮箱地址">
+                </div>
+                <div class="a">
+                    <button type="button"onclick="loadCheck()">注册</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+    
+</body>
+</html>
