@@ -31,7 +31,9 @@ public class ServletRating extends HttpServlet {
         //这个rating表中的数据不需要查询，所以rowkey值准备根据时间戳设置
         //rowkey设置在hbase中是很重要的。并发可能会出问题先做个检测是否已经存在
         //Hbase.getInstance().getTable("rating");
+        
         Get get = new Get(Bytes.toBytes(time));
+        //这个检测是否存在实际没什么作用
         if (!get.isCheckExistenceOnly()) {
             Hbase.getInstance().put("rating", time, "info", "uid", id);
             Hbase.getInstance().put("rating", time, "info", "fid", fid);
