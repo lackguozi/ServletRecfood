@@ -10,3 +10,4 @@
 + js文件夹是css文件和js文件以及部分图片
 
 **涉及到Hbase的连接**
+**用到servlet,ajax**
