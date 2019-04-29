@@ -69,7 +69,9 @@
             width: auto;
             height: 260px;
         }
-
+        /*
+        为了简便，写在里面
+         */
     </style>
 </head>
 <body>
